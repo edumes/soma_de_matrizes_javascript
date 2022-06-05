@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    
+    <script src="script.js"></script>
     <title>Soma de Matrizes</title>
 </head>
 <body>
@@ -13,15 +13,15 @@
     <div>
     <div id="input_type">
         <label for="linhas">Digite as linhas:</label>
-        <input type="number" id="linhas" name="linhas">
+        <input type="number" id="linhas" name="linhas" maxlength="2">
     </div>
     x
     <div id="input_type">
         <label for="colunas">Digite as colunas:</label>
-        <input type="number" id="colunas" name="colunas">
+        <input type="number" id="colunas" name="colunas" maxlength="2">
     </div>
     <br>
-    <button onclick="checarMatriz()">Gerar Matriz</button>
+    <button onclick="checarMatriz(linhas, colunas)">Gerar Matriz</button>
     </div>
 
     <div style="max-width: 320px">
